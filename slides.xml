@@ -10,7 +10,7 @@
 
 <slide number="2">
     <button>
-        <to>2</to>
+        <to>1</to>
         <text>Click me to move to slide 1!</text>
     </button>
 </slide>
