@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 
-<slide number="1">
+<!-- slide 0 -->
+<slide>
     <button>
-        <to>2</to>
+        <to>1</to>
         <text>Click me to move to slide 2!</text>
     </button>
 </slide>
 
-<slide number="2">
+<!-- slide 0 -->
+<slide>
     <button>
-        <to>1</to>
+        <to>0</to>
         <text>Click me to move to slide 1!</text>
     </button>
 </slide>
