@@ -5,6 +5,7 @@ function loadSlide(slideNumber)
     var slideData = xmlDoc.getElementsByTagName("slide")[slideNumber];
     var slideButtons = slideData.getElementsByTagName("button");
     var slideTexts = slideData.getElementsByTagName("text");
+    var slideAudios = slideData.getElementsByTagName("audio");
     var classes = slideData.getElementsByTagName("slideClass");
 
     var slideNode = document.createElement("div");
@@ -17,6 +18,7 @@ function loadSlide(slideNumber)
     addClasses(slideNode, classes);
     createButtons(slideButtons, slideNode);
     createTexts(slideTexts, slideNode);
+    createAudios(slideAudios, slideNode);
 
     body.innerHTML = "";
     body.appendChild(slideNode);
@@ -36,9 +38,40 @@ function loadXML()
     };
 }
 
+function createAudios(audios, slideNode)
+{
+    for (let i = 0; i < audios.length; i++)
+    {
+        var src = audios[i].getElementsByTagName("src")[0].childNodes[0].nodeValue;
+        var classes = audios[i].getElementsByTagName("audioClasses");
+
+        var audioEle = document.createElement("audio");
+        var id = document.createAttribute("id");
+        id.value = `audio${i}`;
+        audioEle.setAttributeNode(id);
+        var autoplay = document.createAttribute("autoplay");
+        audioEle.setAttributeNode(autoplay);
+        var loop = document.createAttribute("loop");
+        audioEle.setAttributeNode(loop);
+
+        var srcEle = document.createElement("source");
+        var srcAtt = document.createAttribute("src");
+        srcAtt.value = `audio/${src}`;
+        srcEle.setAttributeNode(srcAtt);
+        var typeAtt = document.createAttribute("type");
+        typeAtt.value = "audio/mpeg";
+        srcEle.setAttributeNode(typeAtt);
+
+        addClasses(audioEle, classes);
+        audioEle.appendChild(srcEle);
+        slideNode.appendChild(audioEle);
+    }
+}
+
 function createTexts(texts, slideNode)
 {
-    for (let i = 0; i < texts.length; i++) {
+    for (let i = 0; i < texts.length; i++)
+    {
         var value = texts[i].getElementsByTagName("value")[0].childNodes[0].nodeValue;
         var classes = texts[i].getElementsByTagName("textClass");
 
