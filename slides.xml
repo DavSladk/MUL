@@ -23,6 +23,11 @@
         <src>example.mp3</src>
     </audio>
 
+    <image>
+        <imageClass>image</imageClass>
+        <src>pepega.jpg</src>
+    </image>
+
 </slide>
 
 <!-- slide 1 -->
@@ -41,6 +46,11 @@
         <textClass>textclass</textClass>
         <value>Jsem text na slide 1.</value>
     </text>
+
+    <image>
+        <imageClass>imagetoo</imageClass>
+        <src>pepega.jpg</src>
+    </image>
 
 </slide>
 

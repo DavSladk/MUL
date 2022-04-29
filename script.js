@@ -6,6 +6,7 @@ function loadSlide(slideNumber)
     var slideButtons = slideData.getElementsByTagName("button");
     var slideTexts = slideData.getElementsByTagName("text");
     var slideAudios = slideData.getElementsByTagName("audio");
+    var slideImages = slideData.getElementsByTagName("image");
     var classes = slideData.getElementsByTagName("slideClass");
 
     var slideNode = document.createElement("div");
@@ -19,6 +20,7 @@ function loadSlide(slideNumber)
     createButtons(slideButtons, slideNode);
     createTexts(slideTexts, slideNode);
     createAudios(slideAudios, slideNode);
+    createImages(slideImages, slideNode);
 
     body.innerHTML = "";
     body.appendChild(slideNode);
@@ -38,12 +40,33 @@ function loadXML()
     };
 }
 
+function createImages(images, slideNode)
+{
+    for (let i = 0; i < images.length; i++)
+    {
+        var src = images[i].getElementsByTagName("src")[0].childNodes[0].nodeValue;
+        var classes = images[i].getElementsByTagName("imageClass");
+
+        var imageEle = document.createElement("img");
+        var id = document.createAttribute("id");
+        id.value = `image${i}`;
+        imageEle.setAttributeNode(id);
+
+        var srcAtt = document.createAttribute("src");
+        srcAtt.value = `img/${src}`;
+        imageEle.setAttributeNode(srcAtt);
+
+        addClasses(imageEle, classes);
+        slideNode.appendChild(imageEle);
+    }
+}
+
 function createAudios(audios, slideNode)
 {
     for (let i = 0; i < audios.length; i++)
     {
         var src = audios[i].getElementsByTagName("src")[0].childNodes[0].nodeValue;
-        var classes = audios[i].getElementsByTagName("audioClasses");
+        var classes = audios[i].getElementsByTagName("audioClass");
 
         var audioEle = document.createElement("audio");
         var id = document.createAttribute("id");
