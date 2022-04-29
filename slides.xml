@@ -47,6 +47,11 @@
         <value>Jsem text na slide 1.</value>
     </text>
 
+    <video>
+        <videoClass>video</videoClass>
+        <src>example.mp4</src>
+    </video>
+
     <image>
         <imageClass>imagetoo</imageClass>
         <src>pepega.jpg</src>

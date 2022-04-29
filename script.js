@@ -6,6 +6,7 @@ function loadSlide(slideNumber)
     var slideButtons = slideData.getElementsByTagName("button");
     var slideTexts = slideData.getElementsByTagName("text");
     var slideAudios = slideData.getElementsByTagName("audio");
+    var slideVideos = slideData.getElementsByTagName("video");
     var slideImages = slideData.getElementsByTagName("image");
     var classes = slideData.getElementsByTagName("slideClass");
 
@@ -20,6 +21,7 @@ function loadSlide(slideNumber)
     createButtons(slideButtons, slideNode);
     createTexts(slideTexts, slideNode);
     createAudios(slideAudios, slideNode);
+    createVideos(slideVideos, slideNode);
     createImages(slideImages, slideNode);
 
     body.innerHTML = "";
@@ -38,6 +40,36 @@ function loadXML()
       xmlDoc = parser.parseFromString(reader.result,"text/xml");
       loadSlide(0);
     };
+}
+
+function createVideos(videos, slideNode)
+{
+    for (let i = 0; i < videos.length; i++)
+    {
+        var src = videos[i].getElementsByTagName("src")[0].childNodes[0].nodeValue;
+        var classes = videos[i].getElementsByTagName("videoClass");
+
+        var videoEle = document.createElement("video");
+        var id = document.createAttribute("id");
+        id.value = `video${i}`;
+        videoEle.setAttributeNode(id);
+        var autoplay = document.createAttribute("autoplay");
+        videoEle.setAttributeNode(autoplay);
+        var loop = document.createAttribute("loop");
+        videoEle.setAttributeNode(loop);
+
+        var srcEle = document.createElement("source");
+        var srcAtt = document.createAttribute("src");
+        srcAtt.value = `video/${src}`;
+        srcEle.setAttributeNode(srcAtt);
+        var typeAtt = document.createAttribute("type");
+        typeAtt.value = "video/mp4";
+        srcEle.setAttributeNode(typeAtt);
+
+        addClasses(videoEle, classes);
+        videoEle.appendChild(srcEle);
+        slideNode.appendChild(videoEle);
+    }
 }
 
 function createImages(images, slideNode)
