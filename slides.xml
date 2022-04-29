@@ -3,22 +3,32 @@
 
 <!-- slide 0 -->
 <slide>
+    <slideClass>slide0</slideClass>
     <button>
-        <class>pepega</class>
-        <class>cecky</class>
+        <buttonClass>pepega</buttonClass>
+        <buttonClass>cecky</buttonClass>
         <to>1</to>
         <value>Click me to move to slide 2!</value>
     </button>
+    <text>
+        <textClass>textclass</textClass>
+        <value>Jsem text na slide 0.</value>
+    </text>
 </slide>
 
 <!-- slide 1 -->
 <slide>
+    <slideClass>dog</slideClass>
     <button>
-        <class>pepega</class>
-        <class>cecky</class>
+        <buttonClass>pepega</buttonClass>
+        <buttonClass>cecky</buttonClass>
         <to>0</to>
         <value>Click me to move to slide 1!</value>
     </button>
+    <text>
+        <textClass>textclass</textClass>
+        <value>Jsem text na slide 1.</value>
+    </text>
 </slide>
 
 </root>

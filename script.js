@@ -4,6 +4,8 @@ function loadSlide(slideNumber)
 {
     var slideData = xmlDoc.getElementsByTagName("slide")[slideNumber];
     var slideButtons = slideData.getElementsByTagName("button");
+    var slideTexts = slideData.getElementsByTagName("text");
+    var classes = slideData.getElementsByTagName("slideClass");
 
     var slideNode = document.createElement("div");
     var body = document.getElementsByTagName("body")[0];
@@ -12,7 +14,9 @@ function loadSlide(slideNumber)
     id.value = `slide${slideNumber}`;
     slideNode.setAttributeNode(id);
 
+    addClasses(slideNode, classes);
     createButtons(slideButtons, slideNode);
+    createTexts(slideTexts, slideNode);
 
     body.innerHTML = "";
     body.appendChild(slideNode);
@@ -32,14 +36,31 @@ function loadXML()
     };
 }
 
+function createTexts(texts, slideNode)
+{
+    for (let i = 0; i < texts.length; i++) {
+        var value = texts[i].getElementsByTagName("value")[0].childNodes[0].nodeValue;
+        var classes = texts[i].getElementsByTagName("textClass");
+
+        var text = document.createElement("div");
+        text.innerHTML = value;
+
+        var id = document.createAttribute("id");
+        id.value = `text${i}`;
+        text.setAttributeNode(id);
+
+        addClasses(text, classes);
+        slideNode.appendChild(text);
+    }
+}
+
 function createButtons(buttons, slideNode)
 {
-    console.log("createButtons()");
     for (let i = 0; i < buttons.length; i++)
     {
         var to = buttons[i].getElementsByTagName("to")[0].childNodes[0].nodeValue;
         var value = buttons[i].getElementsByTagName("value")[0].childNodes[0].nodeValue;
-        var classes = buttons[i].getElementsByTagName("class");
+        var classes = buttons[i].getElementsByTagName("buttonClass");
 
         var button = document.createElement("button");
         button.innerHTML = value;
