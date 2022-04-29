@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root>
+<!DOCTYPE slides SYSTEM "slides.dtd">
+
+<slides>
 
 <!-- slide 0 -->
 <slide>
@@ -59,4 +61,4 @@
 
 </slide>
 
-</root>
+</slides>
