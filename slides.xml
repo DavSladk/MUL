@@ -4,16 +4,20 @@
 <!-- slide 0 -->
 <slide>
     <button>
+        <class>pepega</class>
+        <class>cecky</class>
         <to>1</to>
-        <text>Click me to move to slide 2!</text>
+        <value>Click me to move to slide 2!</value>
     </button>
 </slide>
 
-<!-- slide 0 -->
+<!-- slide 1 -->
 <slide>
     <button>
+        <class>pepega</class>
+        <class>cecky</class>
         <to>0</to>
-        <text>Click me to move to slide 1!</text>
+        <value>Click me to move to slide 1!</value>
     </button>
 </slide>
 
