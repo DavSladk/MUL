@@ -124,4 +124,138 @@
 
 </slide>
 
+<!-- slide 4 - Les -->
+<slide>
+
+    <slideClass>slide4</slideClass>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>3</to>
+        <value>Vrátím se na rozcestí.</value>
+    </button>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>5</to>
+        <value>Prozkoumám jeskyni.</value>
+    </button>
+
+    <text>
+        <textClass>examle</textClass>
+        <value>Došel jsi do lesa a našel jsi jeskyni. Co uděláš?</value>
+    </text>
+
+    <image>
+        <imageClass>examle</imageClass>
+        <src>cave.jpg</src>
+    </image>
+
+    <audio>
+        <audioClass>examle</audioClass>
+        <src>forest.mp3</src>
+    </audio>
+
+</slide>
+
+<!-- slide 5 - medvěd -->
+<slide>
+
+    <slideClass>slide5</slideClass>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>7</to>
+        <value>Zaútočím na medvěda!</value>
+    </button>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>3</to>
+        <value>Útěk!</value>
+    </button>
+
+    <text>
+        <textClass>examle</textClass>
+        <value>V téhle jeskyni někdo bydlí! Co teď?</value>
+    </text>
+
+    <image>
+        <imageClass>examle</imageClass>
+        <src>bear.jpg</src>
+    </image>
+
+    <audio>
+        <audioClass>examle</audioClass>
+        <src>bear.mp3</src>
+    </audio>
+
+</slide>
+
+<slide>
+    <slideClass>slide6</slideClass>
+
+    <text>
+        <textClass>examle</textClass>
+        <value>Došel jsi do školy a píše se test TINu, na který jsi se neučil. V otázka říká něco o množinách? Automaty? Jak odpovíš?</value>
+    </text>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>7</to>
+        <value>Budu rozmýšlet další studium na FITu.</value>
+    </button>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>7</to>
+        <value>Nakreslím portrét Češky.</value>
+    </button>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>7</to>
+        <value>Nakreslím smajlíka.</value>
+    </button>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>3</to>
+        <value>Útěk!</value>
+    </button>
+
+    <image>
+        <imageClass>examle</imageClass>
+        <src>exam.jpg</src>
+    </image>
+
+    <audio>
+        <audioClass>examle</audioClass>
+        <src>exam.mp3</src>
+    </audio>
+</slide>
+
+<!-- slide 7 - you died -->
+<slide>
+
+    <slideClass>slide7</slideClass>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>0</to>
+        <value>Restart</value>
+    </button>
+
+    <image>
+        <imageClass>examle</imageClass>
+        <src>youdied.jpg</src>
+    </image>
+
+    <audio>
+        <audioClass>examle</audioClass>
+        <src>youdied.mp3</src>
+    </audio>
+
+</slide>
+
 </slides>
