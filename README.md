@@ -67,5 +67,3 @@ Používáme k načítání jednotlivých slidů a přepínání mezi nimi. Tent
 
 ### Obsluha
 Vyberte svůj preferovaný webový prohlížeč a otevře v něm soubor `index.html`. Měli byste vidět vůzvu k výběru souboru, vyberte tedy soubor se slidy k otevření. Po načtení slidů se mezi jednotlivýcmi slidy naviguje klikáním na tlačítka.
-
-### Závěr

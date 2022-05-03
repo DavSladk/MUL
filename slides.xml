@@ -3,60 +3,123 @@
 
 <slides>
 
-<!-- slide 0 -->
+<!-- slide 0 - postel -->
 <slide>
 
     <slideClass>slide0</slideClass>
 
     <button>
-        <buttonClass>pepega</buttonClass>
-        <buttonClass>cecky</buttonClass>
+        <buttonClass>examle</buttonClass>
+        <to>2</to>
+        <value>Vstanu.</value>
+    </button>
+
+    <button>
+        <buttonClass>examle</buttonClass>
         <to>1</to>
-        <value>Click me to move to slide 2!</value>
+        <value>Zůstanu v posteli.</value>
     </button>
 
     <text>
-        <textClass>textclass</textClass>
-        <value>Jsem text na slide 0.</value>
+        <textClass>examle</textClass>
+        <value>Je ráno. Další nádherný den plný dobrodružství! Co uděláš jako první?</value>
     </text>
 
     <audio>
-        <audioClass>audio</audioClass>
-        <src>example.mp3</src>
+        <audioClass>examle</audioClass>
+        <src>snoring.mp3</src>
     </audio>
 
     <image>
-        <imageClass>image</imageClass>
-        <src>pepega.jpg</src>
+        <imageClass>examle</imageClass>
+        <src>bed.jpg</src>
     </image>
 
 </slide>
 
-<!-- slide 1 -->
+<!-- slide 1 - you win -->
 <slide>
 
-    <slideClass>dog</slideClass>
+    <slideClass>slide1</slideClass>
+
+    <image>
+        <imageClass>example</imageClass>
+        <src>youwin.png</src>
+    </image>
+
+    <audio>
+        <audioClass>examle</audioClass>
+        <src>fireworks.mp3</src>
+    </audio>
 
     <button>
-        <buttonClass>pepega</buttonClass>
-        <buttonClass>cecky</buttonClass>
+        <buttonClass>examle</buttonClass>
         <to>0</to>
-        <value>Click me to move to slide 1!</value>
+        <value>Restart</value>
+    </button>
+
+</slide>
+
+<!-- slide 2 - v domě -->
+<slide>
+
+    <slideClass>slide2</slideClass>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>3</to>
+        <value>Vyjdu ze dveří.</value>
+    </button>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>1</to>
+        <value>Vrátím se do postele.</value>
     </button>
 
     <text>
-        <textClass>textclass</textClass>
-        <value>Jsem text na slide 1.</value>
+        <textClass>examle</textClass>
+        <value>Tvůj nádherný dům. Má vše, co potřebuješ: dveře a postel. Co uděláš?</value>
     </text>
 
-    <video>
-        <videoClass>video</videoClass>
-        <src>example.mp4</src>
-    </video>
+    <image>
+        <imageClass>examle</imageClass>
+        <src>room.jpg</src>
+    </image>
+
+</slide>
+
+<!-- slide 3 - Rozcestí -->
+<slide>
+
+    <slideClass>slide3</slideClass>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>6</to>
+        <value>Do školy.</value>
+    </button>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>4</to>
+        <value>Do lesa.</value>
+    </button>
+
+    <button>
+        <buttonClass>examle</buttonClass>
+        <to>2</to>
+        <value>Domů.</value>
+    </button>
+
+    <text>
+        <textClass>examle</textClass>
+        <value>Vyšel jsi z domu a prašnou cestou jsi došel až na rozcestí. Kam se vydáš?</value>
+    </text>
 
     <image>
-        <imageClass>imagetoo</imageClass>
-        <src>pepega.jpg</src>
+        <imageClass>examle</imageClass>
+        <src>crossroad.png</src>
     </image>
 
 </slide>
