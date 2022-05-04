@@ -25,6 +25,7 @@ function loadSlide(slideNumber)
     createImages(slideImages, slideNode);
 
     if (gl) {
+        // create new slide data
         // render new slide
     } else {
         body.innerHTML = "";
