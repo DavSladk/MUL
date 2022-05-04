@@ -9,19 +9,19 @@
     <slideClass>slide0</slideClass>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>leftBottom</buttonClass>
         <to>2</to>
         <value>Vstanu.</value>
     </button>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>rightBottom</buttonClass>
         <to>1</to>
         <value>Zůstanu v posteli.</value>
     </button>
 
     <text>
-        <textClass>examle</textClass>
+        <textClass>heading</textClass>
         <value>Je ráno. Další nádherný den plný dobrodružství! Co uděláš jako první?</value>
     </text>
 
@@ -31,7 +31,7 @@
     </audio>
 
     <image>
-        <imageClass>examle</imageClass>
+        <imageClass>imageCenter</imageClass>
         <src>bed.jpg</src>
     </image>
 
@@ -43,7 +43,7 @@
     <slideClass>slide1</slideClass>
 
     <image>
-        <imageClass>example</imageClass>
+        <imageClass>imageCenter</imageClass>
         <src>youwin.png</src>
     </image>
 
@@ -53,7 +53,7 @@
     </audio>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>centerBottom</buttonClass>
         <to>0</to>
         <value>Restart</value>
     </button>
@@ -66,24 +66,24 @@
     <slideClass>slide2</slideClass>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>leftBottom</buttonClass>
         <to>3</to>
         <value>Vyjdu ze dveří.</value>
     </button>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>rightBottom</buttonClass>
         <to>1</to>
         <value>Vrátím se do postele.</value>
     </button>
 
     <text>
-        <textClass>examle</textClass>
+        <textClass>heading</textClass>
         <value>Tvůj nádherný dům. Má vše, co potřebuješ: dveře a postel. Co uděláš?</value>
     </text>
 
     <image>
-        <imageClass>examle</imageClass>
+        <imageClass>imageCenter</imageClass>
         <src>room.jpg</src>
     </image>
 
@@ -95,30 +95,30 @@
     <slideClass>slide3</slideClass>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>left</buttonClass>
         <to>6</to>
         <value>Do školy.</value>
     </button>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>right</buttonClass>
         <to>4</to>
         <value>Do lesa.</value>
     </button>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>centerBottom</buttonClass>
         <to>2</to>
         <value>Domů.</value>
     </button>
 
     <text>
-        <textClass>examle</textClass>
+        <textClass>heading</textClass>
         <value>Vyšel jsi z domu a prašnou cestou jsi došel až na rozcestí. Kam se vydáš?</value>
     </text>
 
     <image>
-        <imageClass>examle</imageClass>
+        <imageClass>imageCenter</imageClass>
         <src>crossroad.png</src>
     </image>
 
@@ -130,24 +130,24 @@
     <slideClass>slide4</slideClass>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>rightBottom</buttonClass>
         <to>3</to>
         <value>Vrátím se na rozcestí.</value>
     </button>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>leftBottom</buttonClass>
         <to>5</to>
         <value>Prozkoumám jeskyni.</value>
     </button>
 
     <text>
-        <textClass>examle</textClass>
+        <textClass>heading</textClass>
         <value>Došel jsi do lesa a našel jsi jeskyni. Co uděláš?</value>
     </text>
 
     <image>
-        <imageClass>examle</imageClass>
+        <imageClass>imageCenter</imageClass>
         <src>cave.jpg</src>
     </image>
 
@@ -164,24 +164,24 @@
     <slideClass>slide5</slideClass>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>leftBottom</buttonClass>
         <to>7</to>
         <value>Zaútočím na medvěda!</value>
     </button>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>rightBottom</buttonClass>
         <to>3</to>
         <value>Útěk!</value>
     </button>
 
     <text>
-        <textClass>examle</textClass>
+        <textClass>heading</textClass>
         <value>V téhle jeskyni někdo bydlí! Co teď?</value>
     </text>
 
     <image>
-        <imageClass>examle</imageClass>
+        <imageClass>imageCenter</imageClass>
         <src>bear.jpg</src>
     </image>
 
@@ -192,40 +192,41 @@
 
 </slide>
 
+<!-- slide 6 - skola -->
 <slide>
     <slideClass>slide6</slideClass>
 
     <text>
-        <textClass>examle</textClass>
+        <textClass>heading</textClass>
         <value>Došel jsi do školy a píše se test TINu, na který jsi se neučil. V otázka říká něco o množinách? Automaty? Jak odpovíš?</value>
     </text>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>right2</buttonClass>
         <to>7</to>
-        <value>Budu rozmýšlet další studium na FITu.</value>
+        <value>Budu rozmýšlet o další studium na FITu.</value>
     </button>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>right1</buttonClass>
         <to>7</to>
         <value>Nakreslím portrét Češky.</value>
     </button>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>right0</buttonClass>
         <to>7</to>
         <value>Nakreslím smajlíka.</value>
     </button>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>right3</buttonClass>
         <to>3</to>
         <value>Útěk!</value>
     </button>
 
     <image>
-        <imageClass>examle</imageClass>
+        <imageClass>imageLeft</imageClass>
         <src>exam.jpg</src>
     </image>
 
@@ -241,15 +242,15 @@
     <slideClass>slide7</slideClass>
 
     <button>
-        <buttonClass>examle</buttonClass>
+        <buttonClass>centerBottom</buttonClass>
         <to>0</to>
         <value>Restart</value>
     </button>
 
-    <image>
-        <imageClass>examle</imageClass>
-        <src>youdied.jpg</src>
-    </image>
+    <video>
+        <videoClass>imageCenter</videoClass>
+        <src>youdied.mp4</src>
+    </video>
 
     <audio>
         <audioClass>examle</audioClass>

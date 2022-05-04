@@ -45,8 +45,8 @@ XML jsme využili pro definici samotných slidů, elementů, které se na nich n
 * `text` má pouze element `value`, který udává obsah textu.
 * `button` má element `to`, který udává slide, na který se má přejít po kliknutí na toto tlačítko. Dále má element `value`, který udává text tlačítka.
 * `image` má element `src`, který udává obrázek, který se má zobrazit.
-* `audio` má element `src`, který udává audio stopu, která se má přehrát.
-* `video` má element `src`, který udává video, které se má přehrát.
+* `audio` má element `src`, který udává audio stopu, která se má přehrát. Podporuje pouze mp3.
+* `video` má element `src`, který udává video, které se má přehrát. Podporuje pouze mp4.
 
 #### CSS
 CSS jsme využili k tomu, k čemu je CSS určeno - k definování vzhledu slidů a jejich elementů.
