@@ -24,8 +24,12 @@ function loadSlide(slideNumber)
     createVideos(slideVideos, slideNode);
     createImages(slideImages, slideNode);
 
-    body.innerHTML = "";
-    body.appendChild(slideNode);
+    if (gl) {
+        // render new slide
+    } else {
+        body.innerHTML = "";
+        body.appendChild(slideNode);
+    }
 }
 
 function loadXML()
@@ -74,6 +78,16 @@ function createVideos(videos, slideNode)
 
 function createImages(images, slideNode)
 {
+
+    if (gl) {
+
+        renderElems.bgImage = images[0].getElementsByTagName("src")[0].childNodes[0].nodeValue;
+
+        return;
+    }
+
+
+
     for (let i = 0; i < images.length; i++)
     {
         var src = images[i].getElementsByTagName("src")[0].childNodes[0].nodeValue;
