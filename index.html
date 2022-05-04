@@ -2,11 +2,25 @@
 <html>
 <head>
     <script src="script.js"></script>
+    <script src="webgl.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./webgl.css" type="text/css">
+
 </head>
 <body id="body">
-        <script>let gl = false;</script>
+        <div class="container">
+            <canvas id="glcanvas" width="640" height="480"></canvas>
+            <div class="overlay" id="topText" style="color:white"></div>
+            <div class="overlay" id="buttonL">L</div>
+            <div class="overlay" id="buttonLL">LL</div>
+            <div class="overlay" id="buttonLC">LC</div>
+            <div class="overlay" id="buttonLR">LR</div>
+            <div class="overlay" id="buttonR">R</div>
+        </div>
+        <script src="setup.js"></script>
+        <br/>
         <input type="file" accept=".xml">
-        <button onclick="loadXML()">Load</button>
+        <button onclick="loadXML()">Load</button><br/>
+        <button onclick='{gl=null;alert("WebGL disasbled.");}'>Disable WebGL</button>
 </body>
 </html>

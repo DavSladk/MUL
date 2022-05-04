@@ -11,7 +11,7 @@ Vytvořte multimediální aplikaci, která bude zobrazovat multimediální obsah
 * Presentační aplikace musí být též multimediální, např. přehrávání zvuků při přechodu slajdů, animace přechodů slajdů, animace zoomování určité části slajdu atp.
 
 ### Řešení
-Pro řešení tohoto projektu jsme využili HTML, CSS, JavaScirpt a XML.
+Pro řešení tohoto projektu jsme využili HTML, CSS, JavaScript, XML, a rozšíření je vytvořené pomocí WebGL.
 
 #### XML
 XML jsme využili pro definici samotných slidů, elementů, které se na nich nachází a CSS tříd, které tyto elementy mají. Samotný formát XML je definován následujícím DTD:
@@ -65,5 +65,9 @@ Používáme k načítání jednotlivých slidů a přepínání mezi nimi. Tent
 * `createVideos(videos, slideNode)` - Vytváří HTML elementy `video` pro video a připojí je k elementu v slideNode.
 * `addClasses(element, classes)` - Přidává `element` jeho třídy definované v XML.
 
+#### 
+
 ### Obsluha
-Vyberte svůj preferovaný webový prohlížeč a otevře v něm soubor `index.html`. Měli byste vidět vůzvu k výběru souboru, vyberte tedy soubor se slidy k otevření. Po načtení slidů se mezi jednotlivýcmi slidy naviguje klikáním na tlačítka.
+Vyberte svůj preferovaný webový prohlížeč a otevře v něm soubor `index.html`. Na spodku stránky byste měli vidět výzvu k výběru souboru, vyberte tedy soubor se slidy k otevření. Po načtení slidů se mezi jednotlivýcmi slidy naviguje klikáním na tlačítka.
+
+Pro zvolení stabilní varianty bez WebGL před načtením stiskněte tlačítko `Disable WebGL`.

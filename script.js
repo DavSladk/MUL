@@ -27,6 +27,8 @@ function loadSlide(slideNumber)
     if (gl) {
         // create new slide data
         // render new slide
+        reloadTexture(gl);
+        drawScene(gl, programInfo, buffers, texture);
     } else {
         body.innerHTML = "";
         body.appendChild(slideNode);
@@ -88,6 +90,7 @@ function createImages(images, slideNode)
 
     if (gl) {
 
+        // get first image source
         renderElems.bgImage = images[0].getElementsByTagName("src")[0].childNodes[0].nodeValue;
 
         return;
@@ -151,10 +154,21 @@ function createAudios(audios, slideNode)
 
 function createTexts(texts, slideNode)
 {
+
+    if(gl) {
+        document.getElementById("topText").innerHTML = "";
+    }
+
     for (let i = 0; i < texts.length; i++)
     {
         var value = texts[i].getElementsByTagName("value")[0].childNodes[0].nodeValue;
         var classes = texts[i].getElementsByTagName("textClass");
+
+        if(gl) {
+            renderElems.text = value;
+            document.getElementById("topText").innerHTML = value;
+            return;
+        }
 
         var text = document.createElement("div");
         text.innerHTML = value;
@@ -170,11 +184,32 @@ function createTexts(texts, slideNode)
 
 function createButtons(buttons, slideNode)
 {
+    if (gl) {
+        renderElems.buttons = [];
+        clearButtons();
+    }
+
     for (let i = 0; i < buttons.length; i++)
     {
         var to = buttons[i].getElementsByTagName("to")[0].childNodes[0].nodeValue;
         var value = buttons[i].getElementsByTagName("value")[0].childNodes[0].nodeValue;
         var classes = buttons[i].getElementsByTagName("buttonClass");
+
+        if (gl) {
+
+            const className = classes[0].innerHTML;
+
+            const button = {
+                class: className,
+                to: to
+            }
+
+            document.getElementById(buttonClassToID[className]).innerHTML = value;
+
+            renderElems.buttons.push(button);
+
+            continue;
+        }
 
         var button = document.createElement("button");
         button.innerHTML = value;

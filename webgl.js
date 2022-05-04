@@ -1,22 +1,7 @@
-renderElems.bgImage = "bed.jpg";
-renderElems.buttons = [
-  {
-    text: "Left",
-    class: "leftBottom",
-    to: 2
-  },
-  {
-    text: "Right",
-    class: "rightBottom",
-    to: 1
-  }
-];
-renderElems.text = "Hello world!"
-
 buttonPositions = {
   "left":             {x: 100, y: 240},
-  "right":            {x: 560, y: 240},
-  "centerBottom":     {x:   0, y:  40},
+  "right":            {x: 540, y: 240},
+  "centerBottom":     {x: 320, y:  40},
   "leftBottom":       {x: 100, y:  40},
   "rightBottom":      {x: 540, y:  40}
 };
@@ -51,11 +36,9 @@ function canvasClick(e) {
 
     if (canvas_mouseX > left && canvas_mouseX < right &&
       canvas_mouseY > bottom && canvas_mouseY < top) {
-        alert(`Going to slide ${button.to}`);
         loadSlide(button.to);
     }
   }
-
 
   if (!hitButton) {
     drawScene(gl, programInfo, buffers, texture);
@@ -63,8 +46,8 @@ function canvasClick(e) {
 }
 
 function canvasHover(e) {
-  canvas_mouseX = e.clientX-10;
-  canvas_mouseY = 480-(e.clientY-10);
+  canvas_mouseX = e.clientX-140;
+  canvas_mouseY = 480-e.clientY;
   drawScene(gl, programInfo, buffers, texture);
 }
 
@@ -195,6 +178,7 @@ function initBuffers(gl) {
 // Draw the scene.
 //
 function drawScene(gl, programInfo, buffers, texture) {
+  if (!gl) return;
   gl.clearColor(0.0, 0.0, 0.0, 1.0);  // Clear to black, fully opaque
   gl.clearDepth(1.0);                 // Clear everything
   gl.enable(gl.DEPTH_TEST);           // Enable depth testing
@@ -207,7 +191,7 @@ function drawScene(gl, programInfo, buffers, texture) {
   // ==========
   // BACKGROUND
   // ==========
-  if (renderElems.bgImage != "") {
+  if (renderElems.bgImage) {
     gl.bindBuffer(gl.ARRAY_BUFFER, buffers.position);
     const oX = -(canvas_mouseX - 320)/1280;
     const oY = -(canvas_mouseY - 240)/960;
@@ -379,6 +363,10 @@ function loadShader(gl, type, source) {
   }
 
   return shader;
+}
+
+function reloadTexture(gl) {
+  texture = loadTexture(gl, renderElems.bgImage);
 }
 
 // load textures (called with every new slide)
