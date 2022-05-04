@@ -55,8 +55,14 @@ function createVideos(videos, slideNode)
         videoEle.setAttributeNode(id);
         var autoplay = document.createAttribute("autoplay");
         videoEle.setAttributeNode(autoplay);
-        var loop = document.createAttribute("loop");
-        videoEle.setAttributeNode(loop);
+
+        var isLoop = videos[i].getElementsByTagName("loop");
+        console.log(isLoop.length);
+        if(isLoop.length != 0)
+        {
+            var loop = document.createAttribute("loop");
+            videoEle.setAttributeNode(loop);
+        }
 
         var srcEle = document.createElement("source");
         var srcAtt = document.createAttribute("src");
@@ -106,8 +112,13 @@ function createAudios(audios, slideNode)
         audioEle.setAttributeNode(id);
         var autoplay = document.createAttribute("autoplay");
         audioEle.setAttributeNode(autoplay);
-        var loop = document.createAttribute("loop");
-        audioEle.setAttributeNode(loop);
+
+        var isLoop = audios[i].getElementsByTagName("loop");
+        if(isLoop.length != 0)
+        {
+            var loop = document.createAttribute("loop");
+            audioEle.setAttributeNode(loop);
+        }
 
         var srcEle = document.createElement("source");
         var srcAtt = document.createAttribute("src");

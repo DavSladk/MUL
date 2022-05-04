@@ -13,12 +13,12 @@
 
 <!ELEMENT image (imageClass*,src)>
 <!ELEMENT imageClass (#PCDATA)>
-<!ELEMENT src (#PCDATA)>
 
-<!ELEMENT audio (audioClass*,src)>
+<!ELEMENT audio (audioClass*,src,loop?)>
 <!ELEMENT audioClass (#PCDATA)>
-<!ELEMENT src (#PCDATA)>
 
-<!ELEMENT video (videoClass*,src)>
+<!ELEMENT video (videoClass*,src,loop?)>
 <!ELEMENT viodeClass (#PCDATA)>
+
 <!ELEMENT src (#PCDATA)>
+<!ELEMENT loop EMPTY>

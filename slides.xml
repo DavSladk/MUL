@@ -28,6 +28,7 @@
     <audio>
         <audioClass>examle</audioClass>
         <src>snoring.mp3</src>
+        <loop/>
     </audio>
 
     <image>
@@ -50,6 +51,7 @@
     <audio>
         <audioClass>examle</audioClass>
         <src>fireworks.mp3</src>
+        <loop/>
     </audio>
 
     <button>
@@ -154,6 +156,7 @@
     <audio>
         <audioClass>examle</audioClass>
         <src>forest.mp3</src>
+        <loop/>
     </audio>
 
 </slide>
@@ -188,6 +191,7 @@
     <audio>
         <audioClass>examle</audioClass>
         <src>bear.mp3</src>
+        <loop/>
     </audio>
 
 </slide>
@@ -233,6 +237,7 @@
     <audio>
         <audioClass>examle</audioClass>
         <src>exam.mp3</src>
+        <loop/>
     </audio>
 </slide>
 
@@ -251,11 +256,6 @@
         <videoClass>imageCenter</videoClass>
         <src>youdied.mp4</src>
     </video>
-
-    <audio>
-        <audioClass>examle</audioClass>
-        <src>youdied.mp3</src>
-    </audio>
 
 </slide>
 
