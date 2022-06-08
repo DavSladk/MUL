@@ -1,4 +1,6 @@
 # Multimédia
+Hodnocení: 24/19
+
 ## Multimediální prezentátor
 Vypracovali (2.5.2022):
 * David Sladký (xsladk07)
