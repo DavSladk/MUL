@@ -1,5 +1,5 @@
 # Multimédia
-Hodnocení: 24/19
+Hodnocení: 24/29
 
 ## Multimediální prezentátor
 Vypracovali (2.5.2022):
